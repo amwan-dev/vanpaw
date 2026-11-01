@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: VanPaw UI
+Bundle-SymbolicName: dev.amwan.vanpaw.ui
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: VanPaw
+Automatic-Module-Name: dev.amwan.vanpaw.ui
+Bundle-RequiredExecutionEnvironment: JavaSE-21
+Require-Bundle: org.eclipse.rap.rwt;bundle-version="[4.0.0,5.0.0)"
+Service-Component: OSGI-INF/contribution.xml

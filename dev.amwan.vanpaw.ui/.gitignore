@@ -1,0 +1,8 @@
+# Maven / Tycho build output
+target/
+
+# Eclipse generated output
+bin/
+
+# Local development files
+*.log
