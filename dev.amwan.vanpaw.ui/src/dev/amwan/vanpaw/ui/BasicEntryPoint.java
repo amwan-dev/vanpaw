@@ -2,6 +2,7 @@ package dev.amwan.vanpaw.ui;
 
 import org.eclipse.rap.rwt.application.AbstractEntryPoint;
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
@@ -17,6 +18,11 @@ public class BasicEntryPoint extends AbstractEntryPoint {
         checkbox.setText("Hello");
         Button button = new Button(parent, SWT.PUSH);
         button.setText("World");
+        button.addSelectionListener(
+        	    SelectionListener.widgetSelectedAdapter(e -> {
+        	    	button.setText("Clicked!");
+        	    })
+        	);
     }
 
 }
